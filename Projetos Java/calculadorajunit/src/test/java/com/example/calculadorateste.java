@@ -35,4 +35,25 @@ public class calculadorateste {
     public void testeDivisaoZero() {
         calc.divisao(6, 0);
     }
+
+    @Test
+    public void testePotencia() {
+        assertEquals(8, calc.potencia(2, 3), 0);
+    }
+
+    @Test
+    public void testeRaiz() {
+    double resultado = calc.raiz(1024,10);
+    assertEquals(2, resultado, 0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testeRaizZero() {
+        calc.raiz(1024, 0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testeRaizNegativa() {
+        calc.raiz(1024, -2);
+    }
 }

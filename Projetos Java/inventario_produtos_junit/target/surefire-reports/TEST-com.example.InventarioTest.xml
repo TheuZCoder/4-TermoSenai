@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.calculadorateste" time="0.067" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.InventarioTest" time="0.064" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit\target\test-classes;C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit\target\classes;C:\Users\Noite_Matheus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Noite_Matheus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit\target\test-classes;C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit\target\classes;C:\Users\Noite_Matheus\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\Noite_Matheus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Noite_Matheus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,10 +15,10 @@
     <property name="user.country" value="BR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\Noite_Matheus\AppData\Local\Temp\surefire16105633801705898633\surefirebooter-20240726193714532_3.jar C:\Users\Noite_Matheus\AppData\Local\Temp\surefire16105633801705898633 2024-07-26T19-37-14_331-jvmRun1 surefire-20240726193714532_1tmp surefire_0-20240726193714532_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\Noite_Matheus\AppData\Local\Temp\surefire4864304322143346309\surefirebooter-20240726212241193_3.jar C:\Users\Noite_Matheus\AppData\Local\Temp\surefire4864304322143346309 2024-07-26T21-22-41_012-jvmRun1 surefire-20240726212241193_1tmp surefire_0-20240726212241193_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.example.calculadorateste"/>
-    <property name="surefire.test.class.path" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit\target\test-classes;C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit\target\classes;C:\Users\Noite_Matheus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Noite_Matheus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="test" value="com.example.InventarioTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit\target\test-classes;C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit\target\classes;C:\Users\Noite_Matheus\.m2\repository\org\projectlombok\lombok\1.18.34\lombok-1.18.34.jar;C:\Users\Noite_Matheus\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Noite_Matheus\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Noite_Matheus"/>
     <property name="user.language" value="pt"/>
@@ -26,12 +26,12 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit"/>
+    <property name="basedir" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Noite_Matheus\AppData\Local\Temp\surefire16105633801705898633\surefirebooter-20240726193714532_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Noite_Matheus\AppData\Local\Temp\surefire4864304322143346309\surefirebooter-20240726212241193_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\NOITE_~1\AppData\Local\Temp\"/>
     <property name="java.version" value="17.0.12"/>
-    <property name="user.dir" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\calculadorajunit"/>
+    <property name="user.dir" value="C:\Users\Noite_Matheus\Documents\Matheus\Projetos Java\inventario_produtos_junit"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,12 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testeRaiz" classname="com.example.calculadorateste" time="0.003"/>
-  <testcase name="testSoma" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testeDivisao" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testeMultiplicacao" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testeRaizZero" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testeSubtracao" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testeDivisaoZero" classname="com.example.calculadorateste" time="0.0"/>
-  <testcase name="testePotencia" classname="com.example.calculadorateste" time="0.0"/>
+  <testcase name="testCreateProduto" classname="com.example.InventarioTest" time="0.005"/>
+  <testcase name="testUpdateProduto" classname="com.example.InventarioTest" time="0.0"/>
+  <testcase name="testeDeleteProduto" classname="com.example.InventarioTest" time="0.0"/>
 </testsuite>

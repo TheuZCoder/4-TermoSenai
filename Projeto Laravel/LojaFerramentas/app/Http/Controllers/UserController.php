@@ -12,7 +12,7 @@ class UserController extends Controller
     // Exibir o formulário de login
     public function showLoginForm()
     {
-        return view('usarios.login');
+        return view('usuarios.login');
     }
 
 
@@ -40,26 +40,32 @@ class UserController extends Controller
     // Exibir o formulário de registro
     public function showRegistroForm()
     {
-        return view('usarios.registro');
+        return view('usuarios.registro');
     }
 
 
     // Processar o registro de um novo usuário
     public function registro(Request $request)
     {
-        $request->validate([
+        $credentials = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:Users',
+            'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
         ]);
 
 
-        $User = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        if($credentials){
+            $usuario = User::create([
+                'name' => $credentials['name'],
+                'email' => $credentials['email'],
+                'password' => Hash::make($credentials['password']),
+            ]);
+            return redirect('/');
+        }
 
+        return back()->withErrors([
+            'email' => 'As credenciais não correspondem aos nossos registros.',
+        ])->onlyInput('email');
 
         //Auth::login($User);
 

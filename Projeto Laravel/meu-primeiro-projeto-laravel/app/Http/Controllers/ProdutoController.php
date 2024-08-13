@@ -40,7 +40,6 @@ class ProdutoController extends Controller
         return redirect()->route('produtos.index')->
         with('success', 'Produto criado com sucesso.');
     }
-    }
 
     /**
      * Display the specified resource.

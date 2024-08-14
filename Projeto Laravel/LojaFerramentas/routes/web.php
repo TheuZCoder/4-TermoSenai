@@ -12,3 +12,21 @@ name('usuarios.registro');
 
 Route::post('/registro', [UserController::class, 'registro'])->
 name('usuarios.registro');
+
+Route::get('/login', [UserController::class, 'showLoginForm'])->
+name('usuarios.login');
+
+Route::post('/login', [UserController::class, 'login'])->
+name('usuarios.login');
+
+//rota pagina interna
+
+Route::get('/dashboard', function () {
+    return view('usuarios.dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+
+Route::post('/logout', [UserController::class, 'logout'])->
+name('usuarios.logout');
+
+

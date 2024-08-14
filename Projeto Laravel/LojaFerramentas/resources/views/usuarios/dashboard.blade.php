@@ -3,4 +3,4 @@
 @section('content')
 
 
-@endsection
+@endsection()

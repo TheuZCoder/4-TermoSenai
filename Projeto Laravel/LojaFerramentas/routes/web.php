@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProdutoController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -28,5 +29,11 @@ Route::get('/dashboard', function () {
 
 Route::post('/logout', [UserController::class, 'logout'])->
 name('usuarios.logout');
+
+//rota para Produtos
+Route::resource('produtos', ProdutoController::class);
+
+
+
 
 

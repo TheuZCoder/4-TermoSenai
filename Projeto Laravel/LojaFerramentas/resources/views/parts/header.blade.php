@@ -3,6 +3,9 @@
         <h3>
             Olá, {{ Auth::user()->name }}
         </h3>
+        <h4>
+            {{Auth::user()->tipo_usuario}}
+        </h4>
     </div>
     <form action="/logout" method="POST">
         @csrf

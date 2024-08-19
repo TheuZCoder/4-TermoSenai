@@ -68,6 +68,12 @@ main {
     justify-content: space-between;
     list-style-type: none;
 }
+.listLogin{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
 
 /* Responsividade */
 @media (max-width: 767.98px) {

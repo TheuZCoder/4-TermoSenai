@@ -1,0 +1,84 @@
+/* public/css/style.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para a barra de navegação */
+.navbar {
+    background-color: #343a40; /* Cor de fundo escura */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Cor do texto da marca */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    text-decoration: none; /* Remove sublinhado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa; /* Cor do texto ao passar o mouse */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Alinha os itens da nav à direita */
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; /* Espaçamento entre os itens da nav */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* Cor dos links de navegação */
+    font-size: 1rem; /* Tamanho da fonte */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Cor dos links ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo ao passar o mouse */
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 8px 16px; /* Espaçamento interno */
+}
+
+/* Estiliza o botão de alternância (hambúrguer) */
+.navbar-toggler {
+    border: none; /* Remove a borda do botão */
+    background-color: transparent; /* Cor de fundo transparente */
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cGF0aCBkPSJNMTAsMEwgMTAsMTQwIEwgMTQwLDEwMCBMIDAsMTQwIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1jb2xvcj0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXAtY29sb3I9IiMwMDAwMDAiLz48cGF0aCBkPSJNMTAsMTAgTDEwLDEwIEwgMTAsMTAgTDEwLDEwIiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1jb2xvcj0iIzAwMDAwMCIgc3Ryb2tlLXdpZHRoPSIxMiIgc3Ryb2tlLWxpbmVjYXAtY29sb3I9IiMwMDAwMDAiLz48L3N2Zz4='); /* Ícone da barra de navegação */
+}
+
+/* Ajustes para o conteúdo principal */
+main {
+    margin-top: 20px; /* Espaçamento superior */
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+/* Responsividade */
+@media (max-width: 767.98px) {
+    .navbar-nav {
+        margin-left: 0; /* Remove o alinhamento à direita em dispositivos menores */
+        margin-top: 10px; /* Adiciona um espaço no topo para os itens da nav */
+        text-align: center; /* Alinha o texto no centro */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0; /* Remove o espaçamento lateral */
+        margin-top: 10px; /* Adiciona um espaço superior entre os itens da nav */
+    }
+}

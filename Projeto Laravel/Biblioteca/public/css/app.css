@@ -92,3 +92,28 @@ main {
 .nomeUsuario{
     color: white;
 }
+
+footer {
+    background-color: #343a40;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.direitos{
+    color: #ffffff;
+}
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+.DivFora{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.Card{
+    width: 30%;
+    margin: 1%;
+}
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Ensure all cards are the same height */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1; /* This ensures that the body takes up available space */
+}
+
+/* Add space between elements and ensure full-width buttons */
+.card-text {
+    margin-bottom: 0.5rem; /* Space between lines of text */
+}
+
+.btn {
+    width: 100%; /* Ensure buttons take full width */
+}
+
+.DivFora {
+    padding: 20px;
+}
+
+h1.my-4 {
+    margin-bottom: 1.5rem; /* Space below the heading */
+}

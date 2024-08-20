@@ -1,0 +1,65 @@
+/* Estiliza o container do formulário para centralizá-lo na tela */
+.containerFora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Altura total da tela */
+}
+
+/* Estiliza o card de login */
+.cardlogin {
+    max-width: 400px; /* Largura máxima para o card */
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o cabeçalho do card */
+.cardlogin-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+/* Estiliza o corpo do card */
+.cardlogin-body {
+    padding: 20px;
+}
+
+/* Estiliza os rótulos e campos de entrada */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+/* Estiliza o botão de envio e link de recuperação de senha */
+.btn {
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-link {
+    font-size: 0.875rem;
+    color: #007bff;
+}
+
+.btn-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

@@ -1,13 +1,16 @@
 @extends('layouts.app')
+@section('styles')
+<link href="{{ asset('css/login.css') }}" rel="stylesheet">
+@endsection
 
 @section('content')
-<div class="container">
+<div class="containerFora">
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header text-center">{{ __('Register') }}</div>
+            <div class="cardlogin shadow-sm">
+                <div class="cardlogin-header text-center">{{ __('Register') }}</div>
 
-                <div class="card-body">
+                <div class="cardlogin-body">
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 

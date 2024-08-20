@@ -78,13 +78,17 @@ main {
 /* Responsividade */
 @media (max-width: 767.98px) {
     .navbar-nav {
-        margin-left: 0; /* Remove o alinhamento à direita em dispositivos menores */
-        margin-top: 10px; /* Adiciona um espaço no topo para os itens da nav */
-        text-align: center; /* Alinha o texto no centro */
+        margin-left: 0; 
+        margin-top: 10px; 
+        text-align: center; 
     }
 
     .navbar-nav .nav-item {
-        margin-left: 0; /* Remove o espaçamento lateral */
-        margin-top: 10px; /* Adiciona um espaço superior entre os itens da nav */
+        margin-left: 0; 
+        margin-top: 10px; 
     }
+}
+
+.nomeUsuario{
+    color: white;
 }

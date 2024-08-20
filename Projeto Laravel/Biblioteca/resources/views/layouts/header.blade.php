@@ -22,6 +22,8 @@
                     @endif
                     @else
                     <li class="nav-item">
+                        <span class="nomeUsuario">Seja Bem-vindo, {{ Auth::user()->name }}</span>
+
                         <a class="nav-link" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

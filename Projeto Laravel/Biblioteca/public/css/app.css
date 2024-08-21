@@ -117,3 +117,14 @@ footer ul li {
     justify-content: center;
     align-items: center;
 }
+
+.cardedit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pedit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

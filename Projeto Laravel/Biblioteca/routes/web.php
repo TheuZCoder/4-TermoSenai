@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\Admin\BookControllerAdmin;
+use App\Http\Middleware\IsAdmin;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,7 @@ Route::put('/loans/{loan}/return', [BookController::class, 'returnBook'])->name(
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Rotas para o CRUD de livros na página de administração
-Route::middleware(['auth'])->group(function () {
+Route::middleware(IsAdmin::class)->group(function () {
     Route::get('/admin/books', [BookControllerAdmin::class, 'index'])->name('admin.books.index');
     Route::get('/admin/books/create', [BookControllerAdmin::class, 'create'])->name('admin.books.create');
     Route::post('/admin/books', [BookControllerAdmin::class, 'store'])->name('admin.books.store');

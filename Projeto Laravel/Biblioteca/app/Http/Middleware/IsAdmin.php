@@ -9,7 +9,7 @@ class IsAdmin
 {
     public function handle($request, Closure $next)
     {
-        if (Auth::check() && Auth::user()->isAdmin) { // Corrigido de is_admin para isAdmin
+        if (Auth::user()->isAdmin) { // Corrigido de is_admin para isAdmin
             return $next($request);
         }
 

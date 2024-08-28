@@ -87,11 +87,13 @@ document.getElementById('livroForm').addEventListener('submit', function (event)
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(livro)
+            
         })
         .then(response => {
             if (response.ok) {
                 resetForm();
                 buscarLivros();
+                window.location.href = "index.html";
             } else {
                 console.error('Erro ao adicionar livro:', response.statusText);
             }

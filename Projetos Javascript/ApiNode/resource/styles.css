@@ -13,6 +13,11 @@ label {
     margin-right: 10px;
 }
 
+.centro{
+    display: flex;
+    justify-content: center;
+}
+
 input[type="text"],
 input[type="number"] {
     margin-right: 10px;

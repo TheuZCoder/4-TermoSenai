@@ -12,7 +12,7 @@ function buscarLivros() {
                 const linha = document.createElement('tr');
 
                 const idCelula = document.createElement('td');
-                idCelula.textContent = livro._id;
+                
 
                 const tituloCelula = document.createElement('td');
                 tituloCelula.textContent = livro.titulo;
@@ -40,7 +40,7 @@ function buscarLivros() {
                 acoesCelula.appendChild(updateButton);
                 acoesCelula.appendChild(deleteButton);
 
-                linha.appendChild(idCelula);
+                
                 linha.appendChild(tituloCelula);
                 linha.appendChild(autorCelula);
                 linha.appendChild(anoCelula);

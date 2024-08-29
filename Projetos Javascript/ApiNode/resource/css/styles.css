@@ -19,7 +19,7 @@ label {
 }
 
 .btn{
-    margin-left: 10px;
+    margin-top: 10px;
 }
 
 input[type="text"],
@@ -58,4 +58,11 @@ th {
 button.update,
 button.delete {
     margin-right: 5px;
+}
+
+.criarLivro {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

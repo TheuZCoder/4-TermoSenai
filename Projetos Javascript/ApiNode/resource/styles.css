@@ -18,6 +18,10 @@ label {
     justify-content: center;
 }
 
+.btn{
+    margin-left: 10px;
+}
+
 input[type="text"],
 input[type="number"] {
     margin-right: 10px;

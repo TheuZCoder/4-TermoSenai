@@ -76,6 +76,7 @@ document.getElementById('livroForm').addEventListener('submit', function (event)
             if (response.ok) {
                 resetForm();
                 buscarLivros();
+                window.location.href = "index.html";
             } else {
                 console.error('Erro ao atualizar livro:', response.statusText);
             }
@@ -119,13 +120,12 @@ function deletarLivro(id) {
 
 // Função para carregar os dados do livro no formulário para edição
 function carregarLivro(livro) {
-    document.getElementById('livroId').value = livro._id;
-    document.getElementById('titulo').value = livro.titulo;
-    document.getElementById('autor').value = livro.autor;
-    document.getElementById('ano').value = livro.ano;
-    document.getElementById('genero').value = livro.genero;
-    document.getElementById('submitButton').textContent = 'Atualizar Livro';
+  // Armazena as informações do livro no localStorage
+  localStorage.setItem("livroParaEditar", JSON.stringify(livro));
+  // Redireciona para a página criar.html
+  window.location.href = "criar.html";
 }
+
 
 // Função para resetar o formulário
 function resetForm() {

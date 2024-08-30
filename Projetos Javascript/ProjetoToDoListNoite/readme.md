@@ -42,6 +42,8 @@ Desenvolver uma aplicação web para gerenciamento de tarefas (To-Do List). A ap
 - **Mês 2**: Desenvolvimento das funcionalidades principais (CRUD de tarefas).
 - **Mês 3**: Implementação de autenticação e testes.
 - **Mês 4**: Testes finais, ajustes e lançamento.
+
+### Diagrama de Fluxo
 ```mermaid
 flowchart TD
     A[Usuário] --> B[Login]
@@ -53,6 +55,61 @@ flowchart TD
     D --> H[Filtrar Tarefas]
     D --> I[Marcar como Concluída]
     I --> D
+```
+
+### 2. Diagrama de Classe
+
+```markdown
+```mermaid
+classDiagram
+    class Usuario {
+        +String id
+        +String nome
+        +String email
+        +String senha
+        +login()
+        +logout()
+    }
+
+    class Tarefa {
+        +String id
+        +String titulo
+        +String descricao
+        +Date dataCriacao
+        +Date prazo
+        +Boolean concluida
+        +criar()
+        +editar()
+        +excluir()
+        +marcarComoConcluida()
+    }
+
+    Usuario "1" -- "*" Tarefa : possui
+```
+
+### 3. Diagrama de Caso de Uso
+
+```markdown
+```mermaid
+```mermaid
+    erDiagram
+    Usuario {
+        string id
+        string nome
+        string email
+        string senha
+    }
+
+    Tarefa {
+        string id
+        string titulo
+        string descricao
+        date dataCriacao
+        date prazo
+        boolean concluida
+    }
+
+    Usuario ||--|{ Tarefa : possui
 ```
 ## Análise de Risco
 

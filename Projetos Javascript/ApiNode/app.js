@@ -1,9 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const livroRoutes = require('./routes/livroRoutes');
+const livroRoutes = require('./src/routes/livroRoutes');
 require('dotenv').config();
-require('./config/database'); // Conectando ao banco de dados
+require('./src/config/database'); // Conectando ao banco de dados
 const PORT = process.env.PORT || 3000; // Use a porta do ambiente ou 3000 por padrão
 
 const app = express();

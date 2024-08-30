@@ -59,7 +59,7 @@ flowchart TD
 
 ### 2. Diagrama de Classe
 
-```markdown
+
 ```mermaid
 classDiagram
     class Usuario {
@@ -88,9 +88,6 @@ classDiagram
 ```
 
 ### 3. Diagrama de Caso de Uso
-
-```markdown
-```mermaid
 ```mermaid
     erDiagram
     Usuario {

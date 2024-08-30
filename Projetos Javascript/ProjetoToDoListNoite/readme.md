@@ -42,7 +42,18 @@ Desenvolver uma aplicação web para gerenciamento de tarefas (To-Do List). A ap
 - **Mês 2**: Desenvolvimento das funcionalidades principais (CRUD de tarefas).
 - **Mês 3**: Implementação de autenticação e testes.
 - **Mês 4**: Testes finais, ajustes e lançamento.
-
+```mermaid
+flowchart TD
+    A[Usuário] --> B[Login]
+    B --> C[Dashboard]
+    C --> D[Visualizar Tarefas]
+    C --> E[Criar Nova Tarefa]
+    C --> F[Editar Tarefa]
+    C --> G[Excluir Tarefa]
+    D --> H[Filtrar Tarefas]
+    D --> I[Marcar como Concluída]
+    I --> D
+```
 ## Análise de Risco
 
 - **Risco 1**: Atraso no desenvolvimento devido a mudanças de requisitos - Mitigação: Definição clara dos requisitos desde o início e comunicação constante com stakeholders.

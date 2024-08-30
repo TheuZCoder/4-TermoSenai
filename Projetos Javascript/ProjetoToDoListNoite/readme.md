@@ -36,7 +36,21 @@ Desenvolver uma aplicação web para gerenciamento de tarefas (To-Do List). A ap
 
 ### Diagrama de Gantt
 
-![Diagrama de Gantt](link_para_o_diagrama.png)
+```mermaid
+gantt
+    title Cronograma do Projeto To-Do List
+    dateFormat  YYYY-MM-DD
+    section Planejamento
+    Definição de Requisitos       :done,  des1, 2024-09-01, 2024-09-07
+    Design da Interface           :done,  des2, 2024-09-08, 2024-09-14
+    section Desenvolvimento
+    Desenvolvimento do Backend    :active, dev1, 2024-09-15, 2024-10-05
+    Desenvolvimento do Frontend   : dev2, 2024-09-22, 2024-10-12
+    Integração e Testes           : dev3, 2024-10-13, 2024-10-19
+    section Lançamento
+    Ajustes Finais                : 2024-10-20, 2024-10-26
+    Lançamento da Aplicação       : milestone, 2024-10-27, 1d
+```
 
 - **Mês 1**: Planejamento e design da aplicação.
 - **Mês 2**: Desenvolvimento das funcionalidades principais (CRUD de tarefas).

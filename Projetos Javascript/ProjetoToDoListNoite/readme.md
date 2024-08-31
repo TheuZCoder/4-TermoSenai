@@ -114,8 +114,8 @@ classDiagram
 
 ### 3. Diagrama de Caso de Uso
 ```mermaid
- %%{ init : { "theme" : "default", "themeVariables" : { "actorTextSize" : "12px", "actorFontSize" : "14px" } } }%%
-usecaseDiagram
+   %%{ init : { "theme" : "default" } }%%
+    usecaseDiagram
     actor Usuario
 
     Usuario --> (Criar Tarefa)
@@ -124,12 +124,6 @@ usecaseDiagram
     Usuario --> (Marcar Tarefa como Concluída)
     Usuario --> (Visualizar Tarefas)
     Usuario --> (Filtrar Tarefas)
-
-    (Criar Tarefa) --> (Preencher Detalhes da Tarefa)
-    (Editar Tarefa) --> (Modificar Detalhes da Tarefa)
-    (Excluir Tarefa) --> (Confirmar Exclusão)
-    (Marcar Tarefa como Concluída) --> (Atualizar Status da Tarefa)
-    (Filtrar Tarefas) --> (Selecionar Critérios de Filtragem)
 
 ```
 ## Análise de Risco

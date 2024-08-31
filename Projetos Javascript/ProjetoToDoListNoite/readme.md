@@ -26,11 +26,22 @@ Desenvolver uma aplicação web para gerenciamento de tarefas (To-Do List). A ap
 
 ## Objetivos SMART
 
-- **S**: Específico - Lançar a versão inicial da aplicação To-Do List com funcionalidades básicas de gerenciamento de tarefas.
-- **M**: Mensurável - Atingir 1.000 usuários registrados nos primeiros três meses após o lançamento.
-- **A**: Atingível - Usar tecnologias e frameworks já dominados pela equipe, como [Nome do Framework/Tech Stack].
-- **R**: Relevante - Facilitar o gerenciamento de tarefas diárias para melhorar a produtividade dos usuários.
-- **T**: Temporal - Concluir o desenvolvimento da versão inicial dentro de 4 meses.
+S: Específico
+Desenvolver uma aplicação To-Do List simples, que permita a criação, edição, exclusão e marcação de tarefas como concluídas. A aplicação também terá uma interface básica e será responsiva para funcionar em diferentes dispositivos.
+
+M: Mensurável
+Completar o desenvolvimento do projeto com um mínimo de 5 tarefas criadas e gerenciadas com sucesso durante a fase de testes. Documentar o processo de desenvolvimento e principais aprendizados, visando aplicar os conceitos em futuros projetos.
+
+A: Atingível
+Utilizar tecnologias e frameworks já conhecidos, como HTML, CSS, JavaScript e [Nome do Framework/Tech Stack], garantindo que o projeto seja uma oportunidade de consolidar habilidades existentes e explorar novas técnicas.
+
+R: Relevante
+Este projeto servirá como um estudo de caso para fortalecer o entendimento de desenvolvimento front-end e back-end, contribuindo para o aprimoramento das habilidades em programação e design de software.
+
+T: Temporal
+Concluir o desenvolvimento da aplicação dentro de 2 meses, com marcos semanais que incluem a finalização do layout da interface, implementação das funcionalidades principais e realização de testes.
+
+
 
 ## Cronograma
 

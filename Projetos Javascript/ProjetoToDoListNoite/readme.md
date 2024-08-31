@@ -114,16 +114,24 @@ classDiagram
 
 ### 3. Diagrama de Caso de Uso
 ```mermaid
-   %%{ init : { "theme" : "default" } }%%
-    usecaseDiagram
-    actor Usuario
+   erDiagram
+    Usuario {
+        string id
+        string nome
+        string email
+        string senha
+    }
 
-    Usuario --> (Criar Tarefa)
-    Usuario --> (Editar Tarefa)
-    Usuario --> (Excluir Tarefa)
-    Usuario --> (Marcar Tarefa como Concluída)
-    Usuario --> (Visualizar Tarefas)
-    Usuario --> (Filtrar Tarefas)
+    Tarefa {
+        string id
+        string titulo
+        string descricao
+        date dataCriacao
+        date prazo
+        boolean concluida
+    }
+
+    Usuario ||--|{ Tarefa : possui
 
 ```
 ## Análise de Risco

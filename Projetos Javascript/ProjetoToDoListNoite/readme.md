@@ -114,16 +114,28 @@ classDiagram
 
 ### 3. Diagrama de Caso de Uso
 ```mermaid
-%%{ init : { "theme" : "base", "themeVariables" : { "actorTextSize" : "14px", "actorFontSize" : "16px" } } }%%
 flowchart TD
-    actor Usuario as "Usuário"
-    
-    Usuario --> (Criar Tarefa)
-    Usuario --> (Editar Tarefa)
-    Usuario --> (Excluir Tarefa)
-    Usuario --> (Marcar Tarefa como Concluída)
-    Usuario --> (Visualizar Tarefas)
-    Usuario --> (Filtrar Tarefas)
+    Usuario[Usuário] --> CriarTarefa(Criar Tarefa)
+    Usuario --> EditarTarefa(Editar Tarefa)
+    Usuario --> ExcluirTarefa(Excluir Tarefa)
+    Usuario --> MarcarConcluida(Marcar Tarefa como Concluída)
+    Usuario --> VisualizarTarefas(Visualizar Tarefas)
+    Usuario --> FiltrarTarefas(Filtrar Tarefas)
+
+    CriarTarefa --> PreencherDetalhes(Preencher Detalhes da Tarefa)
+    EditarTarefa --> ModificarDetalhes(Modificar Detalhes da Tarefa)
+    ExcluirTarefa --> ConfirmarExclusao(Confirmar Exclusão)
+    MarcarConcluida --> AtualizarStatus(Atualizar Status da Tarefa)
+    FiltrarTarefas --> SelecionarCriterios(Selecionar Critérios de Filtragem)
+
+    %% Descrições dos Casos de Uso
+    CriarTarefa ---|Detalhes| CriarTarefaDetails["Permite ao usuário adicionar uma nova tarefa."]
+    EditarTarefa ---|Detalhes| EditarTarefaDetails["Permite ao usuário modificar uma tarefa existente."]
+    ExcluirTarefa ---|Detalhes| ExcluirTarefaDetails["Permite ao usuário remover uma tarefa."]
+    MarcarConcluida ---|Detalhes| MarcarConcluidaDetails["Permite ao usuário marcar uma tarefa como concluída."]
+    VisualizarTarefas ---|Detalhes| VisualizarTarefasDetails["Permite ao usuário ver todas as tarefas."]
+    FiltrarTarefas ---|Detalhes| FiltrarTarefasDetails["Permite ao usuário aplicar filtros para visualizar tarefas específicas."]
+
 ```
 ## Análise de Risco
 

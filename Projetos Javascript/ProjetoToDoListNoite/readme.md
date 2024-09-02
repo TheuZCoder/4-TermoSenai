@@ -115,7 +115,7 @@ classDiagram
 ### 3. Diagrama de Caso de Uso
 ```mermaid
 %%{ init : { "theme" : "base", "themeVariables" : { "actorTextSize" : "14px", "actorFontSize" : "16px" } } }%%
-usecaseDiagram
+flowchart TD
     actor Usuario as "Usuário"
     
     Usuario --> (Criar Tarefa)

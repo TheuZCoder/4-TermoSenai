@@ -123,43 +123,12 @@ usecaseDiagram
     Usuario --> (Marcar Tarefa como Concluída)
     Usuario --> (Visualizar Tarefas)
     Usuario --> (Filtrar Tarefas)
-    
+
     (Criar Tarefa) --> (Preencher Detalhes da Tarefa)
     (Editar Tarefa) --> (Modificar Detalhes da Tarefa)
     (Excluir Tarefa) --> (Confirmar Exclusão)
     (Marcar Tarefa como Concluída) --> (Atualizar Status da Tarefa)
     (Filtrar Tarefas) --> (Selecionar Critérios de Filtragem)
-    
-    %% Descrição dos Casos de Uso
-    note right of Criar Tarefa
-        Permite ao usuário adicionar uma nova tarefa à lista.
-        O usuário preenche o título, descrição e prazo da tarefa.
-    end note
-    
-    note right of Editar Tarefa
-        Permite ao usuário modificar uma tarefa existente.
-        O usuário pode atualizar o título, descrição ou prazo da tarefa.
-    end note
-    
-    note right of Excluir Tarefa
-        Permite ao usuário remover uma tarefa da lista.
-        O usuário confirma a exclusão antes que a tarefa seja removida.
-    end note
-    
-    note right of Marcar Tarefa como Concluída
-        Permite ao usuário marcar uma tarefa como concluída ou pendente.
-        O status da tarefa é atualizado para refletir seu progresso.
-    end note
-    
-    note right of Filtrar Tarefas
-        Permite ao usuário aplicar filtros para visualizar tarefas específicas.
-        O usuário pode selecionar critérios como data ou status da tarefa.
-    end note
-    
-    note right of Visualizar Tarefas
-        Permite ao usuário ver todas as tarefas na lista.
-        O usuário pode ver detalhes e status das tarefas.
-    end note
 ```
 ## Análise de Risco
 

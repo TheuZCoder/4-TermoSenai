@@ -127,15 +127,6 @@ flowchart TD
     ExcluirTarefa --> ConfirmarExclusao(Confirmar Exclusão)
     MarcarConcluida --> AtualizarStatus(Atualizar Status da Tarefa)
     FiltrarTarefas --> SelecionarCriterios(Selecionar Critérios de Filtragem)
-
-    %% Descrições dos Casos de Uso
-    CriarTarefa ---|Detalhes| CriarTarefaDetails["Permite ao usuário adicionar uma nova tarefa."]
-    EditarTarefa ---|Detalhes| EditarTarefaDetails["Permite ao usuário modificar uma tarefa existente."]
-    ExcluirTarefa ---|Detalhes| ExcluirTarefaDetails["Permite ao usuário remover uma tarefa."]
-    MarcarConcluida ---|Detalhes| MarcarConcluidaDetails["Permite ao usuário marcar uma tarefa como concluída."]
-    VisualizarTarefas ---|Detalhes| VisualizarTarefasDetails["Permite ao usuário ver todas as tarefas."]
-    FiltrarTarefas ---|Detalhes| FiltrarTarefasDetails["Permite ao usuário aplicar filtros para visualizar tarefas específicas."]
-
 ```
 ## Análise de Risco
 

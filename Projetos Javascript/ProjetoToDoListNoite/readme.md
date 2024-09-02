@@ -114,7 +114,6 @@ classDiagram
 
 ### 3. Diagrama de Caso de Uso
 ```mermaid
-   %%{ init : { "theme" : "default" } }%%
 usecaseDiagram
     actor Usuario as "Usuário"
 

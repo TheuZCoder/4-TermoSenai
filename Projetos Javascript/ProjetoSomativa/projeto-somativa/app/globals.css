@@ -1,0 +1,8 @@
+/* Estilos globais */
+body, html {
+  display: flex;
+  flex-direction: column;  
+  text-align: center;
+  align-items: center;
+  background-color: rgb(200, 224, 244);
+}

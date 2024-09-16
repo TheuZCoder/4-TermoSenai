@@ -1,0 +1,69 @@
+/* Estilos comuns para centralizar o contêiner */
+.container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  height: 100vh;           /* Faz com que o contêiner ocupe a altura total da tela */
+  margin: 0;               /* Remove qualquer margem padrão */
+}
+
+/* Estilos para o contêiner de login e registro */
+.authContainer {
+  display: flex;
+  flex-direction: column;  /* Organiza os filhos verticalmente */
+  text-align: center;
+  align-items: center;
+  max-width: 500px;        /* Aumenta a largura máxima do contêiner */
+  background-color: rgb(80, 138, 168);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(241, 102, 102, 0.1);
+  padding: 30px;           /* Aumenta o preenchimento para mais espaço interno */
+}
+
+/* Estilo específico para mensagens de erro */
+.errorMessage {
+  color: red;
+  margin-bottom: 20px;     /* Aumenta a margem inferior para mais espaço */
+  font-weight: bold;
+}
+
+/* Estilos para os campos de entrada */
+.input {
+  width: 100%;
+  padding: 15px;           /* Aumenta o padding para campos maiores */
+  margin: 15px 0;          /* Aumenta a margem para mais espaço entre os campos */
+  border: 1px solid #613737;
+  border-radius: 5px;
+  font-size: 18px;         /* Aumenta o tamanho da fonte para mais legibilidade */
+}
+
+/* Estilos para o botão de ação */
+.button {
+  width: 100%;
+  padding: 15px;           /* Aumenta o padding para um botão maior */
+  background-color: rgb(200, 224, 244);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;         /* Aumenta o tamanho da fonte para mais legibilidade */
+  cursor: pointer;
+  margin-top: 15px;        /* Aumenta a margem superior para mais espaço */
+}
+
+.button:hover {
+  background-color: rgb(180, 204, 224); /* Uma cor ligeiramente diferente para o hover */
+}
+
+/* Estilos para o texto e links adicionais */
+.text {
+  margin-top: 25px;        /* Aumenta a margem superior para mais espaço */
+}
+
+.link {
+  color: rgb(200, 224, 244);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

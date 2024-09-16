@@ -8,6 +8,7 @@ export default function TasksPage() {
   const [newTask, setNewTask] = useState('');
   const [editTaskId, setEditTaskId] = useState(null);
   const [editTitle, setEditTitle] = useState('');
+  const [editStatus, setEditStatus] = useState('');
   const [isAdmin, setIsAdmin] = useState(false);
   const router = useRouter();
 
@@ -83,11 +84,6 @@ export default function TasksPage() {
     setTasks(tasks.filter((task) => task._id !== id));
   };
 
-  const startEditTask = (task) => {
-    setEditTaskId(task._id);
-    setEditTitle(task.title);
-  };
-
   const updateTask = async () => {
     const token = localStorage.getItem('token');
     const response = await fetch(`/api/tasks`, {
@@ -96,7 +92,7 @@ export default function TasksPage() {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ id: editTaskId, title: editTitle }),
+      body: JSON.stringify({ id: editTaskId, title: editTitle, status: editStatus }),
     });
 
     if (response.ok) {
@@ -106,7 +102,18 @@ export default function TasksPage() {
       );
       setEditTaskId(null);
       setEditTitle('');
+      setEditStatus('');
     }
+  };
+
+  const startEditTask = (task) => {
+    setEditTaskId(task._id);
+    setEditTitle(task.title);
+    setEditStatus(task.status);
+  };
+
+  const handleStatusChange = (event) => {
+    setEditStatus(event.target.value);
   };
 
   return (
@@ -133,11 +140,16 @@ export default function TasksPage() {
                   value={editTitle}
                   onChange={(e) => setEditTitle(e.target.value)}
                 />
+                <select value={editStatus} onChange={handleStatusChange}>
+                  <option value="Pendente">Pendente</option>
+                  <option value="Concluída">Concluída</option>
+                  <option value="Parado">Parado</option>
+                </select>
                 <button onClick={updateTask}>Salvar</button>
               </>
             ) : (
               <>
-                {task.title}
+                {task.title} - {task.status}
                 {isAdmin && (
                   <>
                     <button onClick={() => deleteTask(task._id)}>Excluir</button>

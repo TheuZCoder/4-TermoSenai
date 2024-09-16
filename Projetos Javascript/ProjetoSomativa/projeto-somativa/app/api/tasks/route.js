@@ -42,15 +42,24 @@ export async function POST(request) {
 export async function PUT(request) {
   try {
     await connectMongo();
-    const { id, title, description, completed } = await request.json();
-    
-    const updatedTask = await Task.findByIdAndUpdate(id, { title, description, completed }, { new: true });
-    
-    if (!updatedTask) {
-      return NextResponse.json({ success: false, message: "Tarefa não encontrada" }, { status: 404 });
+    const { id, title, status } = await request.json();
+
+    if (!id) {
+      return NextResponse.json({ success: false, message: 'ID da tarefa ausente' }, { status: 400 });
     }
-    
-    return NextResponse.json(updatedTask);
+
+    const task = await Task.findById(id);
+    if (!task) {
+      return NextResponse.json({ success: false, message: 'Tarefa não encontrada' }, { status: 404 });
+    }
+
+    // Atualize o título e o status
+    task.title = title !== undefined ? title : task.title;
+    task.status = status !== undefined ? status : task.status;
+
+    await task.save();
+
+    return NextResponse.json(task);
   } catch (error) {
     console.error("Erro ao atualizar tarefa:", error);
     return NextResponse.json({ success: false, message: "Erro ao atualizar tarefa" }, { status: 500 });

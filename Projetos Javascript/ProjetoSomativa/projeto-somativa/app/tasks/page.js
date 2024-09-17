@@ -153,9 +153,9 @@ export default function TasksPage() {
                 {isAdmin && (
                   <>
                     <button onClick={() => deleteTask(task._id)}>Excluir</button>
-                    <button onClick={() => startEditTask(task)}>Editar</button>
                   </>
                 )}
+                <button onClick={() => startEditTask(task)}>Editar</button>
               </>
             )}
           </li>

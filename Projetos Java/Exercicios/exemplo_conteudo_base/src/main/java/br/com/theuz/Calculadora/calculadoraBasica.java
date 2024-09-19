@@ -9,8 +9,7 @@ public class calculadoraBasica {
 
     public void lerNumeros() {
         try {
-            if (escolha == 6) {
-                
+            if (escolha == 6) {  
             } else if (escolha != 5) {
                 System.out.println("Digite o primeiro número: ");
                 num1 = scanner.nextDouble();

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListExemplo {
-    private List<String> nomes;
+    private final List<String> nomes;
 
     public ListExemplo() {
         nomes = new ArrayList<>();

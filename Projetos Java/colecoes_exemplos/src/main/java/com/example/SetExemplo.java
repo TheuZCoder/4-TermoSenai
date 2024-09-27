@@ -1,12 +1,13 @@
 package com.example;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class SetExemplo {
-    private Set<String> nomes;
+    private final Set<String> nomes;
 
-    public SetExemplo(Set<String> nomes) {
-        this.nomes = nomes;
+    public SetExemplo() {
+        nomes = new HashSet<>();
     }
 
     public void adicionar(String nome) {

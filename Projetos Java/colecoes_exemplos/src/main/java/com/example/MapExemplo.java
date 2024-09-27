@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MapExemplo {
-    private Map<String, String> nomes;
+    private final Map<String, String> nomes;
 
     public MapExemplo() {
         nomes = new HashMap<>();

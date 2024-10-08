@@ -1,7 +1,10 @@
 package com.theuz.apispringjpa.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -24,7 +27,8 @@ public class Manutencao {
     private Integer id;
 
     // Definindo a coluna 'maquinaId' e relacionando-a corretamente com a entidade Maquina
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "maquinaId", referencedColumnName = "id", nullable = false)
     private Maquina maquina;
 
@@ -41,7 +45,8 @@ public class Manutencao {
     private String tempoParado;
 
     // Definindo a coluna 'tecnicoId' e relacionando-a corretamente com a entidade Tecnico
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     @JoinColumn(name = "tecnicoId", referencedColumnName = "id", nullable = false)
     private Tecnico tecnico;
 

@@ -1,27 +1,46 @@
 {
-  "usuario": [
+  "maquinas": [
     {
-      "nome": "Maria",
-      "idade": 22,
-      "Endereco": "Rua 1",
-      "id": "f738"
-    },
-    {
-      "nome": "Pedro",
-      "idade": 15,
-      "Endereco": "Rua 12",
-      "id": "6bef"
-    },
-    {
-      "id": "97c8",
-      "idade": 21,
-      "endereco": "rua 3",
-      "nome": "matheus"
+      "id": 1,
+      "codigo": "M001",
+      "nome": "Torno CNC",
+      "modelo": "CNC 3000",
+      "fabricante": "Siemens",
+      "dataAquisicao": "2020-01-10",
+      "tempoVidaEstimado": 10,
+      "localizacao": "Linha 1",
+      "detalhes": "Operação em alta precisão",
+      "manual": "URL do manual"
     }
   ],
-  "produtos": [
+  "historicoManutencao": [
     {
-      "id": "09cb"
+      "id": 1,
+      "maquinaId": 1,
+      "data": "2024-10-07",
+      "tipo": "Preventiva",
+      "pecasTrocadas": "Correia",
+      "tempoDeParada": 4,
+      "tecnicoId": "João Silva",
+      "observacoes": "Substituição preventiva da correia."
+    }
+  ],
+  "falhas": [
+    {
+      "id": 1,
+      "maquinaId": 1,
+      "data": "2024-09-28",
+      "problema": "Falha no motor",
+      "prioridade": "Alta",
+      "operador": "Carlos Lima"
+    }
+  ],
+  "tecnicos": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "especialidade": "Mecânica",
+      "disponibilidade":"Livre"
     }
   ]
 }

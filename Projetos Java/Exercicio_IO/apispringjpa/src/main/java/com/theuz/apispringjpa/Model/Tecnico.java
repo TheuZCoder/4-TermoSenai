@@ -13,9 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "usuarios")
+@Table(name = "tecnicos")
 @Entity
-public class Usuario {
+public class Tecnico {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,8 +25,8 @@ public class Usuario {
     private String nome;
 
     @Column(length = 45 , nullable = false)
-    private int idade;
+    private String especialidade;
 
     @Column(length = 45 , nullable = false)
-    private String endereco;
+    private String disponibilidade;
 }

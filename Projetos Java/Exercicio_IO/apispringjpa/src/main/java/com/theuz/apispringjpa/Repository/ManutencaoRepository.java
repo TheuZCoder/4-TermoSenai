@@ -10,6 +10,5 @@ public interface ManutencaoRepository  extends JpaRepository<Manutencao, Integer
     
     List<Manutencao> findByMaquinaId(Integer maquinaId);
     
-    List<Manutencao> findByTecnicoId(Integer tecnicoId);
-    
+    List<Manutencao> findByTecnicoId(Integer tecnicoId);    
 }

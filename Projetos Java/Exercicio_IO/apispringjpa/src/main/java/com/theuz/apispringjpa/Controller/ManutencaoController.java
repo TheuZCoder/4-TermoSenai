@@ -52,12 +52,12 @@ public class ManutencaoController {
 
         if (manutencaoOptional.isPresent()) {
             Manutencao manutencao = manutencaoOptional.get();
-            manutencao.setMaquinaId(id);
+            manutencao.setMaquina(manutencaoDetails.getMaquina());
             manutencao.setDataManutencao(manutencaoDetails.getDataManutencao());
             manutencao.setTipo(manutencaoDetails.getTipo());
             manutencao.setPecasTrocadas(manutencaoDetails.getPecasTrocadas());
             manutencao.setTempoParado(manutencaoDetails.getTempoParado());
-            manutencao.setTecnicoId(id);
+            manutencao.setTecnico(manutencaoDetails.getTecnico());;
             manutencao.setObservacoes(manutencaoDetails.getObservacoes());
 
             final Manutencao updatedManutencao = manutencaoService.save(manutencao);

@@ -23,11 +23,9 @@ public class Manutencao {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(length = 45 , nullable = false)
-    private Integer maquinaId;
-
+    // Definindo a coluna 'maquinaId' e relacionando-a corretamente com a entidade Maquina
     @ManyToOne
-    @JoinColumn(name = "maquina_id", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "maquinaId", referencedColumnName = "id", nullable = false)
     private Maquina maquina;
 
     @Column(length = 155 , nullable = false)
@@ -42,14 +40,11 @@ public class Manutencao {
     @Column(length = 155 , nullable = false)
     private String tempoParado;
 
-    @Column(length = 155 , nullable = false)
-    private Integer tecnicoId;
-
+    // Definindo a coluna 'tecnicoId' e relacionando-a corretamente com a entidade Tecnico
     @ManyToOne
-    @JoinColumn(name = "tecnico_id", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "tecnicoId", referencedColumnName = "id", nullable = false)
     private Tecnico tecnico;
 
     @Column(length = 155 , nullable = false)
     private String observacoes;
-
 }

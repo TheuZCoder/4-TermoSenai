@@ -53,11 +53,11 @@ public class FalhaController {
 
         if (falhaOptional.isPresent()) {
             Falha falha = falhaOptional.get();
-            falha.setMaquinaId(id);
+            falha.setMaquina(falhaDetails.getMaquina());;
             falha.setDataFalha(falhaDetails.getDataFalha());
             falha.setProblema(falhaDetails.getProblema());
             falha.setPrioridade(falhaDetails.getPrioridade());
-            falha.setTecnicoId(id);
+            falha.setTecnico(falhaDetails.getTecnico());
             return ResponseEntity.ok(falhaService.save(falha));
         }
         return ResponseEntity.notFound().build();
